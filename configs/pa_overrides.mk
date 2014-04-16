@@ -14,7 +14,9 @@
 
 PRODUCT_PACKAGES += \
     Busybox \
-    Lightbulb
+    Lightbulb \
+    Apollo \
+    DSPManager
 
 # Source or prebuilt PA-prefs logic
 #ifneq ($(PREFS_FROM_SOURCE),true)
@@ -25,12 +27,6 @@ PRODUCT_PACKAGES += \
 #    PRODUCT_PACKAGES += \
 #        ParanoidPreferences
 #endif
-
-# Include ParanoidOTA
-ifneq ($(NO_OTA_BUILD),true)
-    PRODUCT_PACKAGES += \
-        ParanoidOTA
-endif
 
 # Extra properties
 PRODUCT_PROPERTY_OVERRIDES += \
